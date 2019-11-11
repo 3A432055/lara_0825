@@ -36,13 +36,23 @@ Route::get('/', function () {
      //dd($posts);
 
     //< 練習4-1> 使用 update 方法
-
+    /*
     $post = \App\Post::find(1);
     $post->update([
         'title' => 'updated title',
         'content' => 'updated content',
     ]);
-    
+    */
+
+    //< 練習4-3> 換用 save 方法
+
+    $post = \App\Post::find(1);
+    $post->title = 'saved title';
+    $post->content = 'saved content';
+    $post->save();
+
+
+
 
 
 
