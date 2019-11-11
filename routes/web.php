@@ -57,7 +57,10 @@ Route::get('/', function () {
      //$post->delete();
 
     //< 練習5-3>   使用 destroy 方法
-     \App\Post::destroy(2);
+     //\App\Post::destroy(2);
+
+    //< 練習5-5>  刪除多筆資料
+    \App\Post::destroy(3, 5, 7);
 
 
 
