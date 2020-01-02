@@ -78,6 +78,12 @@ Route::get('/', function () {
     dd($lastPost);
  */
 
+//單元練習< 練習7-4> 透過關聯將資料印出來
+    $post = \App\Post::find(4);
+    foreach($post->comments as $comment) {
+        echo $comment->content.'<br>';
+    }
+});
 
 
 
